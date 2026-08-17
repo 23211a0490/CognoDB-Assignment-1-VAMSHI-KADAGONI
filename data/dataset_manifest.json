@@ -1,0 +1,11 @@
+{
+  "source": "SNAP soc-Pokec (https://snap.stanford.edu/data/soc-Pokec.html)",
+  "sampling_method": "BFS sample seeded from 25 random nodes",
+  "seed": 42,
+  "target_edges": 250000,
+  "actual_node_count": 135836,
+  "actual_edge_count": 250000,
+  "degree_min": 1,
+  "degree_median": 1,
+  "degree_max": 7598
+}

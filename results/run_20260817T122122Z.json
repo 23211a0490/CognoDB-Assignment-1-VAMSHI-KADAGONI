@@ -1,0 +1,80 @@
+[
+  {
+    "platform": "neo4j_aura",
+    "started_at": "2026-08-17T12:16:08.819175+00:00",
+    "load": {
+      "nodes_per_sec": 824.17,
+      "rels_per_sec": 1516.84,
+      "total_seconds": 164.82,
+      "load_method": "neo4j driver, UNWIND batches of 200"
+    },
+    "indexed_properties": [
+      "Person.id"
+    ],
+    "traversals": {
+      "1_hop": {
+        "p50": 55.355,
+        "p95": 56.791,
+        "mean": 55.586,
+        "n": 100
+      },
+      "2_hop": {
+        "p50": 55.646,
+        "p95": 60.32,
+        "mean": 56.874,
+        "n": 100
+      },
+      "3_hop": {
+        "p50": 56.801,
+        "p95": 70.734,
+        "mean": 59.138,
+        "n": 100
+      }
+    },
+    "lookups": {
+      "point_lookup": {
+        "p50": 55.457,
+        "p95": 56.768,
+        "mean": 59.477,
+        "n": 100
+      },
+      "filtered_lookup": {
+        "p50": 55.235,
+        "p95": 56.613,
+        "mean": 58.222,
+        "n": 100
+      }
+    },
+    "aggregations": {
+      "count_by_rel_type": {
+        "p50": 92.622,
+        "p95": 105.617,
+        "mean": 97.613,
+        "n": 100
+      }
+    },
+    "mixed": {
+      "1_clients": {
+        "qps": 17.1,
+        "total_ops": 523,
+        "duration_seconds": 30.58
+      },
+      "10_clients": {
+        "qps": 172.19,
+        "total_ops": 5338,
+        "duration_seconds": 31.0
+      },
+      "40_clients": {
+        "qps": 685.67,
+        "total_ops": 21501,
+        "duration_seconds": 31.36
+      }
+    },
+    "footprint": {
+      "stored_data_size": "not observable",
+      "memory_usage": "not observable"
+    },
+    "status": "ok",
+    "finished_at": "2026-08-17T12:21:22.680185+00:00"
+  }
+]

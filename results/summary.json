@@ -1,0 +1,322 @@
+{
+  "CognoDB": [
+    {
+      "platform": "cognodb",
+      "started_at": "2026-08-17T11:35:52.440057+00:00",
+      "load": {
+        "nodes_per_sec": 184.15,
+        "rels_per_sec": 338.93,
+        "total_seconds": 737.62,
+        "load_method": "neo4j driver, UNWIND batches of 200"
+      },
+      "indexed_properties": [
+        "Person.id"
+      ],
+      "traversals": {
+        "1_hop": {
+          "p50": 247.537,
+          "p95": 300.276,
+          "mean": 255.384,
+          "n": 100
+        },
+        "2_hop": {
+          "p50": 248.993,
+          "p95": 314.495,
+          "mean": 261.511,
+          "n": 100
+        },
+        "3_hop": {
+          "p50": 271.383,
+          "p95": 974.658,
+          "mean": 419.715,
+          "n": 100
+        }
+      },
+      "lookups": {
+        "point_lookup": {
+          "p50": 248.186,
+          "p95": 287.671,
+          "mean": 254.274,
+          "n": 100
+        },
+        "filtered_lookup": {
+          "p50": 248.261,
+          "p95": 289.114,
+          "mean": 253.296,
+          "n": 100
+        }
+      },
+      "aggregations": {
+        "count_by_rel_type": {
+          "p50": 1691.333,
+          "p95": 3005.804,
+          "mean": 1985.155,
+          "n": 100
+        }
+      },
+      "mixed": {
+        "1_clients": {
+          "qps": 1.74,
+          "total_ops": 55,
+          "duration_seconds": 31.55
+        },
+        "10_clients": {
+          "qps": 16.6,
+          "total_ops": 557,
+          "duration_seconds": 33.56
+        },
+        "40_clients": {
+          "qps": 41.38,
+          "total_ops": 1555,
+          "duration_seconds": 37.58
+        }
+      },
+      "footprint": {
+        "stored_data_size": "not observable",
+        "memory_usage": "not observable"
+      },
+      "status": "ok",
+      "finished_at": "2026-08-17T11:56:30.562115+00:00"
+    }
+  ],
+  "Neo4j AuraDB": [
+    {
+      "platform": "neo4j_aura",
+      "started_at": "2026-08-17T12:16:08.819175+00:00",
+      "load": {
+        "nodes_per_sec": 824.17,
+        "rels_per_sec": 1516.84,
+        "total_seconds": 164.82,
+        "load_method": "neo4j driver, UNWIND batches of 200"
+      },
+      "indexed_properties": [
+        "Person.id"
+      ],
+      "traversals": {
+        "1_hop": {
+          "p50": 55.355,
+          "p95": 56.791,
+          "mean": 55.586,
+          "n": 100
+        },
+        "2_hop": {
+          "p50": 55.646,
+          "p95": 60.32,
+          "mean": 56.874,
+          "n": 100
+        },
+        "3_hop": {
+          "p50": 56.801,
+          "p95": 70.734,
+          "mean": 59.138,
+          "n": 100
+        }
+      },
+      "lookups": {
+        "point_lookup": {
+          "p50": 55.457,
+          "p95": 56.768,
+          "mean": 59.477,
+          "n": 100
+        },
+        "filtered_lookup": {
+          "p50": 55.235,
+          "p95": 56.613,
+          "mean": 58.222,
+          "n": 100
+        }
+      },
+      "aggregations": {
+        "count_by_rel_type": {
+          "p50": 92.622,
+          "p95": 105.617,
+          "mean": 97.613,
+          "n": 100
+        }
+      },
+      "mixed": {
+        "1_clients": {
+          "qps": 17.1,
+          "total_ops": 523,
+          "duration_seconds": 30.58
+        },
+        "10_clients": {
+          "qps": 172.19,
+          "total_ops": 5338,
+          "duration_seconds": 31.0
+        },
+        "40_clients": {
+          "qps": 685.67,
+          "total_ops": 21501,
+          "duration_seconds": 31.36
+        }
+      },
+      "footprint": {
+        "stored_data_size": "not observable",
+        "memory_usage": "not observable"
+      },
+      "status": "ok",
+      "finished_at": "2026-08-17T12:21:22.680185+00:00"
+    }
+  ],
+  "Memgraph Cloud": [
+    {
+      "platform": "memgraph",
+      "started_at": "2026-08-17T15:44:34.776838+00:00",
+      "load": {
+        "nodes_per_sec": 450.71,
+        "rels_per_sec": 829.51,
+        "total_seconds": 301.38,
+        "load_method": "neo4j driver, UNWIND batches of 200"
+      },
+      "indexed_properties": [
+        "Person.id"
+      ],
+      "traversals": {
+        "1_hop": {
+          "p50": 147.214,
+          "p95": 150.667,
+          "mean": 147.777,
+          "n": 100
+        },
+        "2_hop": {
+          "p50": 147.728,
+          "p95": 151.09,
+          "mean": 148.179,
+          "n": 100
+        },
+        "3_hop": {
+          "p50": 148.691,
+          "p95": 163.026,
+          "mean": 151.377,
+          "n": 100
+        }
+      },
+      "lookups": {
+        "point_lookup": {
+          "p50": 147.713,
+          "p95": 179.02,
+          "mean": 153.301,
+          "n": 100
+        },
+        "filtered_lookup": {
+          "p50": 147.658,
+          "p95": 151.289,
+          "mean": 148.462,
+          "n": 100
+        }
+      },
+      "aggregations": {
+        "count_by_rel_type": {
+          "p50": 230.797,
+          "p95": 253.517,
+          "mean": 233.552,
+          "n": 100
+        }
+      },
+      "mixed": {
+        "1_clients": {
+          "qps": 6.16,
+          "total_ops": 190,
+          "duration_seconds": 30.82
+        },
+        "10_clients": {
+          "qps": 64.25,
+          "total_ops": 2000,
+          "duration_seconds": 31.13
+        },
+        "40_clients": {
+          "qps": 261.9,
+          "total_ops": 8100,
+          "duration_seconds": 30.93
+        }
+      },
+      "footprint": {
+        "stored_data_size": "not observable",
+        "memory_usage": "not observable"
+      },
+      "status": "ok",
+      "finished_at": "2026-08-17T15:53:09.993604+00:00"
+    }
+  ],
+  "ArangoDB Oasis": [
+    {
+      "platform": "arangodb",
+      "started_at": "2026-08-17T17:16:00.294763+00:00",
+      "load": {
+        "nodes_per_sec": 731.2,
+        "rels_per_sec": 1345.73,
+        "total_seconds": 185.77,
+        "load_method": "python-arango insert_many batches of 1000"
+      },
+      "indexed_properties": [
+        "people._key (built-in primary index)"
+      ],
+      "traversals": {
+        "1_hop": {
+          "p50": 306.604,
+          "p95": 558.872,
+          "mean": 330.257,
+          "n": 100
+        },
+        "2_hop": {
+          "p50": 298.595,
+          "p95": 409.702,
+          "mean": 374.731,
+          "n": 100
+        },
+        "3_hop": {
+          "p50": 261.637,
+          "p95": 349.832,
+          "mean": 737.147,
+          "n": 100
+        }
+      },
+      "lookups": {
+        "point_lookup": {
+          "p50": 306.193,
+          "p95": 359.019,
+          "mean": 303.7,
+          "n": 100
+        },
+        "filtered_lookup": {
+          "p50": 306.582,
+          "p95": 408.447,
+          "mean": 310.551,
+          "n": 100
+        }
+      },
+      "aggregations": {
+        "count_by_rel_type": {
+          "p50": 475.92,
+          "p95": 924.659,
+          "mean": 577.552,
+          "n": 100
+        }
+      },
+      "mixed": {
+        "1_clients": {
+          "qps": 3.07,
+          "total_ops": 99,
+          "duration_seconds": 32.24
+        },
+        "10_clients": {
+          "qps": 31.59,
+          "total_ops": 1058,
+          "duration_seconds": 33.49
+        },
+        "40_clients": {
+          "qps": 104.44,
+          "total_ops": 3969,
+          "duration_seconds": 38.0
+        }
+      },
+      "footprint": {
+        "stored_data_size": "not observable",
+        "memory_usage": "see ArangoDB Oasis dashboard"
+      },
+      "status": "ok",
+      "finished_at": "2026-08-17T17:25:49.925785+00:00"
+    }
+  ]
+}

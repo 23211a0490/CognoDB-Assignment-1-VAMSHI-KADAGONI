@@ -1,0 +1,80 @@
+[
+  {
+    "platform": "arangodb",
+    "started_at": "2026-08-17T16:59:01.355097+00:00",
+    "load": {
+      "nodes_per_sec": 683.72,
+      "rels_per_sec": 1258.35,
+      "total_seconds": 198.67,
+      "load_method": "python-arango insert_many batches of 1000"
+    },
+    "indexed_properties": [
+      "people._key (built-in primary index)"
+    ],
+    "traversals": {
+      "1_hop": {
+        "p50": 304.382,
+        "p95": 364.105,
+        "mean": 310.261,
+        "n": 100
+      },
+      "2_hop": {
+        "p50": 306.045,
+        "p95": 355.653,
+        "mean": 307.134,
+        "n": 100
+      },
+      "3_hop": {
+        "p50": 306.03,
+        "p95": 409.76,
+        "mean": 342.643,
+        "n": 100
+      }
+    },
+    "lookups": {
+      "point_lookup": {
+        "p50": 295.154,
+        "p95": 373.002,
+        "mean": 310.427,
+        "n": 100
+      },
+      "filtered_lookup": {
+        "p50": 302.614,
+        "p95": 367.206,
+        "mean": 300.641,
+        "n": 100
+      }
+    },
+    "aggregations": {
+      "count_by_rel_type": {
+        "p50": 380.566,
+        "p95": 724.112,
+        "mean": 436.853,
+        "n": 100
+      }
+    },
+    "mixed": {
+      "1_clients": {
+        "qps": 3.03,
+        "total_ops": 101,
+        "duration_seconds": 33.28
+      },
+      "10_clients": {
+        "qps": 29.48,
+        "total_ops": 983,
+        "duration_seconds": 33.34
+      },
+      "40_clients": {
+        "qps": 103.56,
+        "total_ops": 3891,
+        "duration_seconds": 37.57
+      }
+    },
+    "footprint": {
+      "stored_data_size": "not observable",
+      "memory_usage": "see ArangoDB Oasis dashboard"
+    },
+    "status": "ok",
+    "finished_at": "2026-08-17T17:08:05.268327+00:00"
+  }
+]

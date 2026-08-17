@@ -1,0 +1,19 @@
+[
+  {
+    "platform": "arangodb",
+    "started_at": "2026-08-17T16:51:28.587083+00:00",
+    "load": {
+      "nodes_per_sec": 749.8,
+      "rels_per_sec": 1379.97,
+      "total_seconds": 181.16,
+      "load_method": "python-arango insert_many batches of 1000"
+    },
+    "indexed_properties": [
+      "people._key (built-in primary index)"
+    ],
+    "status": "failed",
+    "error": "[HTTP 400][ERR 1521] AQL: collection not known to traversal: 'people'. please add 'WITH people' as the first line in your AQL [node #3: TraversalNode] [node #4: CalculationNode] [node #5: CollectNode] [node #12: SubqueryEndNode] [node #8: CalculationNode] [node #9: ReturnNode] (while executing)",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\run_benchmark.py\", line 72, in run_one_platform\n    result[\"traversals\"] = traversals.run(\n                           ^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\workloads\\traversals.py\", line 19, in run\n    latencies = run_timed(call, iterations=iterations, warmup=warmup)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\common\\metrics.py\", line 43, in run_timed\n    fn()\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\workloads\\traversals.py\", line 17, in call\n    platform.traverse(sid, hops)\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\platforms\\arangodb.py\", line 104, in traverse\n    cursor = self.db.aql.execute(\n             ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\.venv\\Lib\\site-packages\\arango\\aql.py\", line 493, in execute\n    return self._execute(request, response_handler)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\.venv\\Lib\\site-packages\\arango\\api.py\", line 74, in _execute\n    return self._executor.execute(request, response_handler)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\.venv\\Lib\\site-packages\\arango\\executor.py\", line 67, in execute\n    return response_handler(resp)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\lsri4\\OneDrive\\Documents\\Desktop\\ECE\\wexa-graphdb-benchmark\\.venv\\Lib\\site-packages\\arango\\aql.py\", line 490, in response_handler\n    raise AQLQueryExecuteError(resp, request)\narango.exceptions.AQLQueryExecuteError: [HTTP 400][ERR 1521] AQL: collection not known to traversal: 'people'. please add 'WITH people' as the first line in your AQL [node #3: TraversalNode] [node #4: CalculationNode] [node #5: CollectNode] [node #12: SubqueryEndNode] [node #8: CalculationNode] [node #9: ReturnNode] (while executing)\n",
+    "finished_at": "2026-08-17T16:56:51.091074+00:00"
+  }
+]

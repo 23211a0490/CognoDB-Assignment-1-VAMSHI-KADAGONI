@@ -1,0 +1,80 @@
+[
+  {
+    "platform": "cognodb",
+    "started_at": "2026-08-17T11:05:20.336610+00:00",
+    "load": {
+      "nodes_per_sec": 204.32,
+      "rels_per_sec": 449.36,
+      "total_seconds": 778.88,
+      "load_method": "neo4j driver, UNWIND batches of 200"
+    },
+    "indexed_properties": [
+      "Person.id"
+    ],
+    "traversals": {
+      "1_hop": {
+        "p50": 260.982,
+        "p95": 262.263,
+        "mean": 261.855,
+        "n": 100
+      },
+      "2_hop": {
+        "p50": 262.193,
+        "p95": 314.99,
+        "mean": 273.406,
+        "n": 100
+      },
+      "3_hop": {
+        "p50": 293.76,
+        "p95": 1067.692,
+        "mean": 539.906,
+        "n": 100
+      }
+    },
+    "lookups": {
+      "point_lookup": {
+        "p50": 261.027,
+        "p95": 262.212,
+        "mean": 261.167,
+        "n": 100
+      },
+      "filtered_lookup": {
+        "p50": 260.903,
+        "p95": 261.992,
+        "mean": 261.026,
+        "n": 100
+      }
+    },
+    "aggregations": {
+      "count_by_rel_type": {
+        "p50": 1471.956,
+        "p95": 1594.691,
+        "mean": 1474.042,
+        "n": 100
+      }
+    },
+    "mixed": {
+      "1_clients": {
+        "qps": 3.53,
+        "total_ops": 111,
+        "duration_seconds": 31.49
+      },
+      "10_clients": {
+        "qps": 30.7,
+        "total_ops": 966,
+        "duration_seconds": 31.47
+      },
+      "40_clients": {
+        "qps": 51.47,
+        "total_ops": 1656,
+        "duration_seconds": 32.17
+      }
+    },
+    "footprint": {
+      "stored_data_size": "not observable",
+      "memory_usage": "not observable"
+    },
+    "status": "ok",
+    "finished_at": "2026-08-17T11:25:54.639160+00:00"
+  }
+]
