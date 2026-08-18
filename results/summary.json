@@ -318,5 +318,85 @@
       "status": "ok",
       "finished_at": "2026-08-17T17:25:49.925785+00:00"
     }
+  ],
+  "FalkorDB Cloud": [
+    {
+      "platform": "falkordb",
+      "started_at": "2026-08-18T03:33:11.095304+00:00",
+      "load": {
+        "nodes_per_sec": 979.02,
+        "rels_per_sec": 1801.84,
+        "total_seconds": 138.75,
+        "load_method": "FalkorDB UNWIND batches of 1000"
+      },
+      "indexed_properties": [
+        "Person.id"
+      ],
+      "traversals": {
+        "1_hop": {
+          "p50": 17.202,
+          "p95": 71.781,
+          "mean": 25.26,
+          "n": 100
+        },
+        "2_hop": {
+          "p50": 16.897,
+          "p95": 19.993,
+          "mean": 17.243,
+          "n": 100
+        },
+        "3_hop": {
+          "p50": 16.724,
+          "p95": 18.684,
+          "mean": 17.068,
+          "n": 100
+        }
+      },
+      "lookups": {
+        "point_lookup": {
+          "p50": 16.337,
+          "p95": 18.105,
+          "mean": 16.595,
+          "n": 100
+        },
+        "filtered_lookup": {
+          "p50": 16.971,
+          "p95": 18.174,
+          "mean": 17.126,
+          "n": 100
+        }
+      },
+      "aggregations": {
+        "count_by_rel_type": {
+          "p50": 417.913,
+          "p95": 470.944,
+          "mean": 429.779,
+          "n": 100
+        }
+      },
+      "mixed": {
+        "1_clients": {
+          "qps": 49.59,
+          "total_ops": 1506,
+          "duration_seconds": 30.37
+        },
+        "10_clients": {
+          "qps": 529.86,
+          "total_ops": 17128,
+          "duration_seconds": 32.33
+        },
+        "40_clients": {
+          "qps": 1667.54,
+          "total_ops": 65566,
+          "duration_seconds": 39.32
+        }
+      },
+      "footprint": {
+        "stored_data_size": "not observable",
+        "memory_usage": "not observable"
+      },
+      "status": "ok",
+      "finished_at": "2026-08-18T03:38:20.945751+00:00"
+    }
   ]
 }

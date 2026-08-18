@@ -30,7 +30,7 @@ PLATFORM_FACTORIES = {
     "neo4j_aura": lambda: __import__("platforms.neo4j_aura", fromlist=["Neo4jAuraPlatform"]).Neo4jAuraPlatform(),
     "memgraph": lambda: __import__("platforms.memgraph", fromlist=["MemgraphPlatform"]).MemgraphPlatform(),
     "arangodb": lambda: __import__("platforms.arangodb", fromlist=["ArangoDBPlatform"]).ArangoDBPlatform(),
-    
+    "falkordb": lambda: __import__("platforms.falkordb", fromlist=["FalkorDBPlatform"]).FalkorDBPlatform(),
 }
 
 
@@ -46,7 +46,7 @@ def run_one_platform(name, factory, args):
 
         print("Loading dataset...")
         load_stats = p.load(
-            os.path.join(DATA_DIR, "nodes.csv"), os.path.join(DATA_DIR, "edges.csv")
+        os.path.join(DATA_DIR, "nodes.csv"), os.path.join(DATA_DIR, "edges.csv")
         )
         result["load"] = load_stats
         print(f"  {load_stats}")
