@@ -30,7 +30,7 @@ PLATFORM_FACTORIES = {
     "neo4j_aura": lambda: __import__("platforms.neo4j_aura", fromlist=["Neo4jAuraPlatform"]).Neo4jAuraPlatform(),
     "memgraph": lambda: __import__("platforms.memgraph", fromlist=["MemgraphPlatform"]).MemgraphPlatform(),
     "arangodb": lambda: __import__("platforms.arangodb", fromlist=["ArangoDBPlatform"]).ArangoDBPlatform(),
-    "janusgraph": lambda: __import__("platforms.janusgraph", fromlist=["JanusGraphPlatform"]).JanusGraphPlatform(),
+    
 }
 
 
